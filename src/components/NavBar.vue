@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="lg" type="light">
+    <b-navbar toggleable="lg" >
       <b-navbar-brand to="/">
         <a class="navbar-brand mx-3" href="#">Food, LLC</a>
       </b-navbar-brand>
@@ -7,7 +7,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav />
-        <b-navbar-nav align="right" class=" d-sm-block d-md-none">
+        <b-navbar-nav align="right" class="d-sm-block d-md-none">
           <b-nav-item v-for="nav in navItems" class="text-center" :key="nav">
             <b-button variant="text-secondary">{{nav}}</b-button>
           </b-nav-item>
