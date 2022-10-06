@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="lg" >
+    <b-navbar toggleable="lg" type="light">
       <b-navbar-brand to="/">
         <a class="navbar-brand mx-3" href="#">Food, LLC</a>
       </b-navbar-brand>
