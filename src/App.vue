@@ -1,7 +1,7 @@
 <template>
     <b-container fluid>
       <NavBar></NavBar>
-      <b-row align-h="center mx-3">
+      <b-row align-h="center" class=" mx-3">
         <b-col class="text-center my-4" cols="12">
           <h3>Our Menu</h3>
         </b-col>
