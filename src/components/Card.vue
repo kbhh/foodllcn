@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <div class="border py-3 mx-1 bg-secondary   my-2 px-2 py-2" >
+    <div class="border py-3 mx-1 bg-light   my-2 px-2 py-2" >
         <h5 class="text-center"> {{menu.title}}</h5>
         <p >{{menu.desc}}{{menu.desc}}{{menu.desc}}{{menu.desc}}</p>
         <p >{{menu.desc}}{{menu.desc}}{{menu.desc}}{{menu.desc}}</p>
