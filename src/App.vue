@@ -1,18 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <b-container fluid>
+      <NavBar></NavBar>
+      <b-row align-h="center">
+        <b-col class="text-center my-4" cols="12">
+          <h3>Our Menu</h3>
+        </b-col>
+        <b-col v-for="menu in menus" :key="menu.title" lg="4" md="5" sm="12" xs="12">
+          <Card :menu="menu"></Card>
+        </b-col>
+      </b-row> 
+    </b-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Card from '@/components/Card.vue'
+import NavBar from '@/components/NavBar.vue';
+const lorem = `
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+    `;
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { Card, NavBar },
+  data () {
+  return {
+  
+    menus: [
+      {
+        title: "Chicken",
+        desc: lorem
+      },
+      {
+        title: "Beef",
+        desc: lorem
+      },
+      {
+        title: "Sushi",
+        desc: lorem
+      }
+    ]
   }
+ }
 }
 </script>
 
